@@ -1,0 +1,154 @@
+
+:root{
+    --texto1: #0F1111;
+    --texto2: #FFFFFF;
+    --cor1: #E3E6E6;
+    --cor2: white;
+    --cor3: #131921;
+    --cor4: #232F3E;
+    --cor5: hsl(180, 0%, 41%);
+    --destaque1: #FEBD69;
+    --destque2: #F3A847;
+
+}
+/* General */
+*{
+    font-family: 'Montserrat';
+    margin: 0;
+}
+body{
+    height: 100vh;
+}
+
+.row{
+    margin: 0 !important;
+}
+header{
+    background-color: var(--cor5);
+    & p{
+        color: var(--cor1);
+        margin: auto;
+    }
+    & nav{
+        padding: 0 !important;
+    }
+    padding: 8px;
+
+    height: 7%;
+}
+main{
+    margin: 0;
+    height: 93%;
+}
+footer{
+    text-align: center;
+    background-color: var(--cor3);
+    color: var(--texto2);
+    padding: 30px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    & p{
+        margin-bottom: 0;
+    }
+    height: 80%;
+}
+.btn-primary:hover{
+    background-color: #c28008;
+    border-color:#c28008; 
+}
+#navbar img{
+    width: 50px;
+}
+#navbar{
+    justify-content: space-between;
+}
+#navbar a{
+    font-size: 14px;
+    color: #757575;
+}
+#navbar a:hover{
+    color: #f2a340;
+}
+.navbar div{
+    padding: 0px;
+}
+
+
+#search-form{
+    width: 40%;
+}
+
+/* ADMIN */
+/* Barra Lateral */
+#lateral-bar{
+    background-color: var(--cor1);
+    max-height: fit-content;
+    padding-top: 30px;
+}
+#lateral-bar *{
+    text-decoration: none;
+}
+#lateral-bar li a{
+    transition: 0.2s;
+    color: var(--texto1);
+    &:hover{
+        color: var(--destque2);
+        font-weight: 500;
+    }
+    font-weight: 400;
+    font-size: 18px;
+}
+#lateral-bar li:not(:last-child) {
+    margin-bottom: 12px;
+}
+/* Area Principal */
+#main-area{
+    padding: 20px;
+}
+.ma-section{
+    color: var(--cor1);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.144);
+    border-radius: 8px;
+    padding: 0px;
+}
+.ma-section div{
+    padding: 12px;
+    & h2{
+        color: var(--cor4);
+        font-size: 18px;
+        font-weight: 700;
+    }
+}
+.table-link{
+    text-decoration: dashed;
+
+    font-weight: 600;
+    &:hover{
+        color: var(--cor3);
+    }
+}
+
+
+/* Formularios */
+label{
+    color: var(--cor3);
+}
+.form-image .img-container{
+    width: 250px;
+    height: 300px;
+    
+    overflow: hidden;
+}
+.img-container img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 12px;
+}
+
+
+
+
+
